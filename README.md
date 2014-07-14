@@ -4,7 +4,7 @@ Twisk is a utility for tracking and displaying ISK donations as an overlay for l
 
 Planned Features
 ====
-* Journal entry filters
+*Journal entry filters*
 * Top donator
 * List of most recent donators
 * Popup on new donations
