@@ -22,5 +22,53 @@ namespace eZet.Twisk.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int ApiKeyId {
+            get {
+                return ((int)(this["ApiKeyId"]));
+            }
+            set {
+                this["ApiKeyId"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ApiKeyVCode {
+            get {
+                return ((string)(this["ApiKeyVCode"]));
+            }
+            set {
+                this["ApiKeyVCode"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int AccountKey {
+            get {
+                return ((int)(this["AccountKey"]));
+            }
+            set {
+                this["AccountKey"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public long LastJournalId {
+            get {
+                return ((long)(this["LastJournalId"]));
+            }
+            set {
+                this["LastJournalId"] = value;
+            }
+        }
     }
 }

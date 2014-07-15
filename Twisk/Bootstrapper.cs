@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using Caliburn.Micro;
+using eZet.Twisk.Services;
 using eZet.Twisk.ViewModels;
 
 namespace eZet.Twisk {
     public class Bootstrapper : BootstrapperBase {
+        
         SimpleContainer _container;
 
         public Bootstrapper() {
@@ -17,6 +19,10 @@ namespace eZet.Twisk {
             _container.Singleton<IWindowManager, WindowManager>();
             _container.Singleton<IEventAggregator, EventAggregator>();
             _container.PerRequest<ShellViewModel>();
+            _container.PerRequest<OverlayViewModel>();
+
+            _container.PerRequest<EveOnlineApiService>();
+
         }
 
         protected override object GetInstance(Type service, string key) {
